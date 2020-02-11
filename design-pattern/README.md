@@ -14,3 +14,9 @@
   - creator의 역할을 수행하는 클래스는 대부분 Singleton 패턴으로 만들 수 있다.
 - [Chapter.05 Singleton](./src/ch_05_singleton/Main.java)
   - 인스턴스가 한 개밖에 존재하지 않는 것을 보증하는 패턴
+- [Chapter.06 Prototype](./src/ch_06_prototype/Main.java)
+  - 인스턴스에서 새로운 인스턴스를 만드는 패턴
+    - Croneable과 clone
+      - clone은 복사를 할 뿐이지 생성자를 호출하는 것이 아니다.
+      - clone은 피상적인 복사(shallow copy)이다.
+      - clone 메소드를 오버라이드 하는 경우에 super.clone()을 호출해야 한다.
