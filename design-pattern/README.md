@@ -21,4 +21,13 @@
       - clone은 피상적인 복사(shallow copy)이다.
       - clone 메소드를 오버라이드 하는 경우에 super.clone()을 호출해야 한다.
 - [Chapter.07 Builder](./src/ch_07_builder/Main.java)
-  
+- [Chapter.08 Abstract Factory](./src/ch_08_abstract_factory/Main.java) 
+  - 추상적인 공장에서는 추상적인 부품을 조합해서 추상적인 제품을 만든다.
+  - 부품의 구체적인 구현에는 주목하지 않고 인터페이스(API)에 주목한다.
+  - 인터페이스(API)만을 사용해서 부품을 조립하고 제품으로 완성한다.
+  - 공장을 추가하는 것은 간단하나, 부품을 추가하는것은 곤란하다.
+    - 구체적인 공장 전부에 새로 추가된 부품에 대응하는 수정을 해야한다.
+  - 인스턴스를 만드는 다양한 방법
+    - new
+    - clone
+    - java.lang.Class newInstance()
