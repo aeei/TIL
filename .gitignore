@@ -222,3 +222,5 @@ tmp/
 temp/
 
 # End of https://www.gitignore.io/api/node,java,intellij
+
+**/src/**/*.html
